@@ -1,53 +1,41 @@
 package com.example.jstore_android_naufalikhsan;
 
 public class Location {
+    private String province;
+    private String description;
+    private String city;
 
-    private String provinceLocation;
-    private String descriptionLocation;
-    private String cityLocation;
-
-    public Location(String provinceLocation, String descriptionLocation, String cityLocation){
-        this.cityLocation=cityLocation;
-        this.provinceLocation=provinceLocation;
-        this.cityLocation=cityLocation;
-    }
-
-    public String getProvinceLocation()
-    {
-        return provinceLocation;
+    public Location(String province, String description, String city) {
+        this.province = province;
+        this.description = description;
+        this.city = city;
     }
 
 
 
-    public String getCityLocation()
-    {
-        return cityLocation;
+    public String getProvince() {
+        return province;
     }
 
-
-
-    public String getDescriptionLocation()
-    {
-        return descriptionLocation;
+    public void setProvince(String province) {
+        this.province = province;
     }
 
-
-    public void setProvinceLocation(String provinceLocation)
-    {
-        this.provinceLocation=provinceLocation;
+    public String getDescription() {
+        return description;
     }
 
-
-    public void setCityLocation(String cityLocation)
-    {
-        this.cityLocation=cityLocation;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-
-    public void setDescriptionLocation(String descriptionLocation)
-    {
-        this.descriptionLocation=descriptionLocation;
+    public String getCity() {
+        return city;
     }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
 
 }
-

@@ -8,7 +8,7 @@ public class Supplier {
     private String phoneNumber;
     private Location location;
 
-    public Supplier(int id,String name, String email, String phoneNumber, Location location)
+    public Supplier(int id, String name, String email, String phoneNumber, Location location)
     {
         this.id=id;
         this.name=name;
@@ -17,73 +17,53 @@ public class Supplier {
         this.location=location;
     }
 
-
-
-    public int getId()
-    {
+    public int getId(){
         return id;
     }
 
-
-
-    public String getName()
-    {
+    public String getName(){
         return name;
     }
 
-
-
-    public String getEmail()
-    {
+    public String getEmail(){
         return email;
     }
 
-
-
-    public String getPhoneNumber()
-    {
+    public String getPhoneNumber(){
         return phoneNumber;
     }
 
-
-
-    public Location getLocation()
-    {
+    public Location getLocation(){
         return location;
     }
 
-
-
-    public void setId(int id)
-    {
+    public void setId(int id){
         this.id=id;
     }
 
-
-
-    public void setName(String name)
-    {
+    public void setName(String name){
         this.name=name;
     }
 
-
-
-    public void setEmail(String email)
-    {
+    public void setEmail(String email){
         this.email=email;
     }
 
-
-
-    public void setPhoneNumber(String phoneNumber)
-    {
+    public void setPhoneNumber(String phoneNumber){
         this.phoneNumber=phoneNumber;
     }
 
-
-
-    public void setLocation(Location location)
-    {
+    public void setLocation(Location location){
         this.location=location;
+    }
+
+    public String toString()
+    {
+        return "= Location ===============================" +
+                "\nName      : " + name +
+                "\nEmail     : " + email +
+                "\nTelephone : " + phoneNumber +
+                "\nLocation  : " + location.getCity() + ", " + location.getProvince() +
+                "\n==========================================";
     }
 }
